@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  gym_clicker:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - GAME_URL=${GAME_URL}
+      - PORT=8080
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
