@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Update</title>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.box{
+    background:#1c1c1c;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:18px;
+    color:#bbbbbb;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h1>🔧 Обновление игры</h1>
+<p>Сейчас проходит технический перерыв.</p>
+<p>Пожалуйста зайдите позже.</p>
+  <p>Следите за новостями https://t.me/gymclicker.</p>
+</div>
+
+<script>
+let tg = window.Telegram.WebApp;
+tg.expand();
+</script>
+
+</body>
+</html>
