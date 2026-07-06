@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: gym-clicker
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: GAME_URL
+        sync: false
